@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+.prueba {
+  background-color: #ffffff;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#content {
+  right: auto;
+
+  bottom: auto;
+  margin-right: -100em;
+  transform: translate(-50%, -50%);
+}
+
+/* Contact Form */
+
+#contactbtn {
+  border-radius: 25px;
+  background: green;
+  cursor: pointer;
+  border-color: red;
+  box-shadow: 0px 20px 20px -20px;
+  width: 90px;
+  height: 35px;
+  position: fixed;
+  color: white;
+  bottom: 0 !important;
+  right: 0 !important;
+  justify-content: right !important;
+}
+
+#btncancel {
+  cursor: pointer;
+  align-self: left;
+  background: black;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 98px;
+  display: inline block;
+  font: 'Bree Serif', Georgia, serif;
+}
+
+.open-button {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  margin-top: 95px;
+  border-radius: 5px 25px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: true;
+  position: fixed;
+  margin-top: 10em;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type='text'],
+.form-container input[type='number'] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 2px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.scroll {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+/* When the inputs get focus, do something */
+.form-container input[type='text']:focus,
+.form-container input[type='number']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.opciones1 {
+  margin-top: -1.5em;
+  margin-left: 78em;
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
